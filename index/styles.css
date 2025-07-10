@@ -1,0 +1,162 @@
+:root {
+    --page-bg-very-dark-blue: hsl(216, 12%, 8%);
+    --form-bg-dark-blue: hsl(213, 19%, 18%);
+    --btn-bg-dark-blue-light: hsl(213, 19%, 28%);
+    --btn-bg-dark-blue: hsl(213, 19%, 28%);
+    --btn-bg-orange: hsl(25, 97%, 53%);
+    --btn-bg-white: hsl(0, 0%, 100%);
+    --fc-white: hsl(0, 0%, 100%);
+    --fc-light-gray: hsl(217, 12%, 63%);
+    --fc-light-black: hsl(0, 0%, 0%);
+    --fc-dark-blue: hsl(213, 19%, 28%);
+    --fc-orange: hsl(25, 97%, 53%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: none;
+    margin: 15px 0px;
+}
+
+body {
+    font-family: "Overpass", serif;
+    background-color: var(--page-bg-very-dark-blue);
+    height: 100vh;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--form-bg-dark-blue);
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form img {
+    
+    background-color: var(--btn-bg-dark-blue);
+    padding: 15px;
+    border-radius: 100px;
+}
+
+form h1 {
+    color: var(--fc-white);
+    font-size: 2.5rem;
+}
+
+form p {
+    color: var(--fc-light-gray);
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/* General Button styling */
+button {
+    font-weight: bold;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    border: none;
+}
+
+/* Buttons 1 to 5 */
+.ratingsScoreFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+button[type="button"] {
+    background-color: var(--btn-bg-dark-blue);
+    font-weight: bold;
+    font-size: clamp(0.3rem, 5vw, 1.4rem);
+    width: clamp(50px, 10vw, 60px);
+    height: clamp(50px, 10vw, 60px);
+    border-radius: 50%;
+    padding: 20px;
+    margin: 5px 0px;
+    /* transition: background-color ease 0.2s; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button[type="button"]:hover {
+    background-color: var(--btn-bg-white);
+    color: var(--fc-black);
+}
+
+.ratingBtnClicked {
+    background-color: var(--btn-bg-orange) !important;
+    color: var(--fc-gray) !important;
+    /* transition: background-color ease-in 0.0s; */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: var(--btn-bg-orange);
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 100px;
+    transition: background-color ease 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--btn-bg-white);
+    color: var(--fc-black);
+}
+
+/* button[type="submit"]:active {
+    background-color: var(--btn-bg-orange);
+    color: var(--fc-gray);
+    transition: background-color ease 0.0s;
+} */
+
+/* Thank You Pop-Up */
+
+.ratingsContainer {
+    text-align: center;
+}
+
+.ratingsImg {
+    padding: 30px 0px;
+    display: block;
+    margin: auto;
+}
+
+.ratingsHeader {
+    color: var(--fc-white);
+    font-size: 2em;
+    margin: 10px 0px;
+}
+
+.ratingsResult {
+    background-color: var(--btn-bg-dark-blue);
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 20px 0px;
+    border-radius: 50px;
+    color: var(--fc-orange) !important;
+    font-size: 1.3rem;
+}
+
+.ratingsMessage {
+    color: var(--fc-light-gray);
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+
+
