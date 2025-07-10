@@ -117,7 +117,7 @@ function showPopUp(rating, message) {
     popUpContainer.classList.add('ratingsContainer', 'container');
 
     // Set up the image
-    popUpImg.src = "/index/images/illustration-thank-you.svg";
+    popUpImg.src = "images/illustration-thank-you.svg";
     popUpImg.alt = "Thank You Illustration";
     popUpImg.classList.add('ratingsImg');
 
